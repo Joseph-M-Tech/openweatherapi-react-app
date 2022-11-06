@@ -35,14 +35,14 @@ function App() {
         <div className="top">
           <div className="location">
             <p>{data.name}</p>
+            <p></p>
           </div>
           <div className="temp">
             {/*check if child data is available */}
             { data.main ? <h2>{data.main.temp.toFixed()} ℉</h2> : null }
-            {/* <h2>{data.main.temp}</h2> */}
           </div>
           <div className="description">
-              { data.weather ? <p>{ data.weather[0].main }</p> : null }
+            { data.weather ? <p>{ data.weather[0].main }</p> : null }
           </div>
         </div>
 
